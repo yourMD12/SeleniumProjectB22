@@ -23,7 +23,7 @@ public class dropdown1_5 {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @AfterMethod
-    public void tearDown() throws InterruptedException{
+    public void tearDown() throws InterruptedException {
         Thread.sleep(1000);
         driver.close();
     }

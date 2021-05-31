@@ -28,17 +28,18 @@ public class scenario5 {
     @AfterMethod
     public void tearDown() throws InterruptedException{
         Thread.sleep(1000);
-        //driver.close();
+        driver.close();
     }
     @Test
     public void scenario5() throws InterruptedException {
-        WebElement fl = driver.findElement(By.xpath("//span[@class ='title title-level-1']"));
-        Select fleet = new Select(fl);
-        fleet.getFirstSelectedOption();
+        WebElement fl = driver.findElement(By.xpath("//i[@class='fa-asterisk menu-icon']")); //li[@class='dropdown dropdown-level-1']
+//        Select fleet = new Select(fl);
+//        fleet.getFirstSelectedOption();
         WebElement text = driver.findElement(By.xpath("//span[@class ='title title-level-2']"));
-        Select vehicles = new Select(text);
-        vehicles.selectByVisibleText("Vehicles");
-        driver.findElement(By.xpath("//div[@class ='column-manager dropdown']")).click();
+        text.click();
+//        Select vehicles = new Select(text);
+//        vehicles.selectByVisibleText("Vehicles");
+//        driver.findElement(By.xpath("//div[@class ='column-manager dropdown']")).click();
         WebElement setting = driver.findElement(By.xpath("//input[@data-role ='renderable']"));
         Select setButton = new Select(setting);
         Thread.sleep(1000);
