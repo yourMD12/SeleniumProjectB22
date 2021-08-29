@@ -1,4 +1,4 @@
-package com.cybertek.tests.dropdownTasks1_5;
+package com.cybertek.tests.practice.dropdownTasks1_5;
 
 import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;

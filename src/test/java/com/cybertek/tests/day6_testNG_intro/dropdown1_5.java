@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -22,11 +21,11 @@ public class dropdown1_5 {
         driver.get("http://practice.cybertekschool.com/dropdown");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
-    @AfterMethod
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(1000);
-        driver.close();
-    }
+//    @AfterMethod
+//    public void tearDown() throws InterruptedException {
+//        Thread.sleep(1000);
+//        driver.close();
+ //   }
     @Test
     public void TC1() throws InterruptedException{
         WebElement simple = driver.findElement(By.id("dropdown"));

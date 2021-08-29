@@ -19,9 +19,9 @@ public class tc3_forgotPassword {
 
         //   2.Go to http://practice.cybertekschool.com/forgot_password
         driver.get("http://practice.cybertekschool.com/forgot_password");
-
-        //   3.Enter any email into input box
-        //   4.Click on Retrieve password
+//
+//        //   3.Enter any email into input box
+//        //   4.Click on Retrieve password
         driver.findElement(By.name("email")).sendKeys("hello@gmail.com" + Keys.ENTER);
 
         //   5.Verify URL contains: Expected: “email_sent”
